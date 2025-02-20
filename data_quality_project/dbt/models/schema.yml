@@ -1,0 +1,34 @@
+# dbt/models/schema.yml
+version: 2
+
+sources:
+  - name: source_db
+    database: source_database
+    schema: public
+    tables:
+      - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
+          - name: email
+            tests:
+              - accepted_values:
+                  values: [null]
+                  quote: true
+                  where: "email NOT LIKE '%@%.%' AND email IS NOT NULL"
+          - name: registration_date
+            tests:
+              - not_null
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            tests:
+              - relationships:
+                  to: ref('stg_customers')
+                  field: customer_id
