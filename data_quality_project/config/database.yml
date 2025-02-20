@@ -1,0 +1,12 @@
+# config/database.yml
+databases:
+  source_db:
+    host: localhost
+    port: 5432
+    database: source_database
+    schema: public
+  quality_db:
+    host: localhost
+    port: 5432
+    database: quality_metrics
+    schema: public

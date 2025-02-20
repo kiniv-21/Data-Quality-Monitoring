@@ -1,0 +1,30 @@
+[0m11:40:04.685365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C466287980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4661A8DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C466287920>]}
+
+
+============================== 11:40:04.690366 | 2f72ce8c-248e-4341-b059-15fc5dd0faae ==============================
+[0m11:40:04.690366 [info ] [MainThread]: Running with dbt=1.6.0
+[0m11:40:04.691745 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vivek.kini\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init data_quality_project', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:40:04.691745 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/vivek.kini/.dbt')}
+[0m11:40:04.693518 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:40:04.695584 [debug] [MainThread]: Starter project path: C:\Users\vivek.kini\Desktop\Personal\Projects\Data-Quality-Monitoring-Framework\dq-env\Lib\site-packages\dbt\include\starter_project
+[0m11:40:04.732422 [info ] [MainThread]: 
+Your new dbt project "data_quality_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:40:04.735161 [info ] [MainThread]: Setting up your profile.
+[0m11:40:56.322032 [info ] [MainThread]: Profile data_quality_project written to C:\Users\vivek.kini\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:40:56.324028 [debug] [MainThread]: Command `dbt init` succeeded at 11:40:56.323031 after 51.75 seconds
+[0m11:40:56.324028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C465EABFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C465D3E030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4661E93A0>]}
+[0m11:40:56.325030 [debug] [MainThread]: Flushing usage events
